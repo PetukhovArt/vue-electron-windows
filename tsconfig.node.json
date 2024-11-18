@@ -6,5 +6,11 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.config.ts", "package.json", "electron", "electron/preload/**/*"]
+  "include": [
+    "vite.config.ts",
+    "package.json",
+    "electron",
+    "electron/preload/**/*",
+    "electron/preload/*.d.ts"
+  ]
 }
