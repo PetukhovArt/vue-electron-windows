@@ -3,7 +3,6 @@ import ChildWindow from "./child-window/ChildWindow.vue";
 import {windowsManagerRenderer} from "./child-window/window-manager-renderer";
 import {ref} from "vue";
 import {nanoid} from "nanoid";
-import RecursiveItem from "./tree-binary/RecursiveItem.vue";
 
 const currentId = ref("");
 
@@ -13,16 +12,9 @@ const onCreateWindow = () => {
   windowsManagerRenderer.createTriggersWindow(id);
 };
 const counter = ref(0);
-// setInterval(() => {
-//   counter.value++;
-// }, 1000);
-
 </script>
 
 <template>
-  <div>
-    <RecursiveItem/>
-  </div>
   <div>
     <!--    <button @click="onCreateWindow">open child</button>-->
     <!--    <div>{{ counter }}</div>-->
